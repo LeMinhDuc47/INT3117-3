@@ -188,7 +188,7 @@ public class InsuranceCalculatorTest {
     // 4. x=9, y=1, T (invalid age)
     @Test
     void testCase04() {
-        assertThrows(IllegalArgumentException.class, () -> InsuranceCalculator.calculateInsurance(-1, true, 1));
+        assertThrows(IllegalArgumentException.class, () -> InsuranceCalculator.calculateInsurance(9, true, 1));
     }
 
     // 5. x=10, y=7, T
@@ -230,7 +230,7 @@ public class InsuranceCalculatorTest {
     // 11. x=10, y=0, T (invalid contract)
     @Test
     void testCase13() {
-        assertThrows(IllegalArgumentException.class, () -> InsuranceCalculator.calculateInsurance(-1, true, 0));
+        assertThrows(IllegalArgumentException.class, () -> InsuranceCalculator.calculateInsurance(10, true, 0));
     }
 
     // 12. x=10, y=1, F
